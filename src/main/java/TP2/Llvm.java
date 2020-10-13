@@ -72,6 +72,12 @@ public class Llvm {
 
 
   // LLVM Types
+  
+  /*
+   * j ai aucune idee de si c est bon ce que j ai rajoute...
+   * manque peut etre des types qui seront utiles comme Array, Structure et Vector
+   */
+  
   static public abstract class Type {
     public abstract String toString();
   }
@@ -81,6 +87,31 @@ public class Llvm {
       return "i32";
     }
   }
+  
+  static public class Float extends Type {
+	  public String toString() {
+		  return "float";
+	  }
+  }
+
+  static public class Pointer extends Type {
+	  public String toString() {
+		  return "*";
+	  }
+  }
+  
+  static public class Token extends Type {
+	  public String toString() {
+		  return "token";
+	  }
+  }
+  
+  static public class Label extends Type {
+	  public String toString() {
+		  return "label";
+	  }
+  }
+  
 
   // TODO : other types
 
