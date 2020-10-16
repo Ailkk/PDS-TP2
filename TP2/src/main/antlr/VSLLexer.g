@@ -18,11 +18,15 @@ fragment LETTER : 'a'..'z' ;
 fragment DIGIT  : '0'..'9' ;
 fragment ASCII  : ~('\n'|'"');
 
+
 // keywords
 LP    : '(' ; // Left parenthesis
 RP    : ')' ;
-PLUS      : '+'      ;
-MOINS      : '-'      ;
+PLUS  : '+'      ;
+MOINS : '-'      ;
+MULTI : '*'      ;
+DIVI  : '/'      ;
+
 
 // TODO : other keywords
 
